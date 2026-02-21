@@ -6,12 +6,17 @@
 </head>
 
 <body>
-<h2>Book Entry Form</h2>
+<h2>Book CRUD Form</h2>
 <form action="book" method="post">
-    Book ID: <input type="number" name="bookId" required><br><br>
-    Book Name: <input type="text" name="bookName" required><br><br>
-    Book Price: <input type="number" step="0.01" name="bookPrice" required><br><br>
-    <input type="submit" value="Save Book">
+    <form action="book" method="post">
+        Book ID: <input type="number" name="bookId" required><br><br>
+        Book Name: <input type="text" name="bookName"><br><br>
+        Book Price: <input type="number" step="0.01" name="bookPrice"><br><br>
+
+        <button type="submit" name="action" value="insert">Insert</button>
+        <button type="submit" name="action" value="update">Update</button>
+        <button type="submit" name="action" value="delete">Delete</button>
+    </form>
 </form>
 
 </body>
